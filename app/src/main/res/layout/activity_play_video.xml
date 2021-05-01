@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Play"
+    tools:context=".PlayVideo"
     android:orientation="vertical">
 
 
@@ -23,8 +23,8 @@
 
     </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/capture"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
