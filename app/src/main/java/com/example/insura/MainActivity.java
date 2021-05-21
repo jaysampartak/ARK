@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
-
     }
 
 
@@ -62,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == VideoPicker.VIDEO_PICKER_REQUEST_CODE && resultCode == RESULT_OK) {
             List<String> mPaths =  data.getStringArrayListExtra(VideoPicker.EXTRA_VIDEO_PATH);
             //Your Code
-            MKPlayerActivity.configPlayer(this).play(mPaths.get(0));
+          //  MKPlayerActivity.configPlayer(this).play(mPaths.get(0));
            //Changing activity to play the file
             Intent intent= new Intent(getApplicationContext(), PlayVideo.class);
             intent.putExtra("PATH", mPaths.get(0));

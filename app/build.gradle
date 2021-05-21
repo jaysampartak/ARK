@@ -42,9 +42,12 @@ dependencies {
     implementation 'net.alhazmy13.MediaPicker:libary:2.4.4'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
     //noinspection GradleCompatible
     implementation 'com.android.support:recyclerview-v7:25.3.1'// Support for RecyclerView
     implementation 'com.squareup.picasso:picasso:2.5.2' //To be added to load image into recyclerview using url
+    implementation 'com.squareup.okhttp3:okhttp:3.3.1'
 
+
+   implementation 'com.android.support:support-v4:19.1.+'
 }

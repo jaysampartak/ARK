@@ -1,12 +1,13 @@
 package com.example.insura;
 
 import com.google.gson.annotations.SerializedName;
-public class Post {
+public class  Post {
     private int userId;
     private int id;
     private String title;
     @SerializedName("body")
     private String text;
+
     public int getUserId() {
         return userId;
     }
@@ -18,5 +19,22 @@ public class Post {
     }
     public String getText() {
         return text;
+    }
+
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }

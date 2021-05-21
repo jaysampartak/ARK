@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/item"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     app:cardBackgroundColor="@color/white"
@@ -16,7 +16,7 @@
 
     <RelativeLayout
 
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <!--ImageVIew to display our Course Image-->
@@ -24,18 +24,21 @@
             android:id="@+id/img"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:padding="5dp"
-            app:srcCompat="@mipmap/ic_launcher"
-             />
+            app:srcCompat="@mipmap/ic_launcher" />
 
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_toEndOf="@id/img"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -44,13 +47,17 @@
 
         <TextView
             android:id="@+id/url"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/name"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
             android:layout_toEndOf="@id/img"
             android:drawablePadding="2dp"
+            android:text="Go to link"
+
+            android:autoLink="web"
 
         />
     </RelativeLayout>
